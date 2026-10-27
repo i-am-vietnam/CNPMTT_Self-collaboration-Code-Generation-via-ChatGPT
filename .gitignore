@@ -1,1 +1,20 @@
 
+.env
+.venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*:Zone.Identifier
+.DS_Store
+
+# Generated HumanEval runs and analysis outputs
+humaneval_workdir*/
+workdir_E*/
+out_E*.jsonl
+ketqua_E*.txt
+phan_tich*.csv
+pt_*.csv
+test3.jsonl
+test_E3_10.jsonl
+test_direct3.jsonl
+tong_hop.txt

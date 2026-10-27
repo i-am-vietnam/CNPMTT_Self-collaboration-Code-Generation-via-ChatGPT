@@ -302,7 +302,7 @@ def main():
         config = ModelConfig(model=args.model, max_tokens=16384)
 
     print("Loading HumanEval dataset...")
-    dataset = load_dataset("openai_humaneval", split="test")
+    dataset = load_dataset("openai/openai_humaneval", split="test")
 
     if args.max_samples:
         dataset = list(dataset)[:args.max_samples]

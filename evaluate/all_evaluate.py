@@ -1,4 +1,6 @@
 import re
+import multiprocessing as _mp
+_mp.set_start_method("fork", force=True)
 import json
 import copy
 import argparse
@@ -24,7 +26,7 @@ def main():
     input_path = args.input_path
 
     if args.dataset == 'humaneval':
-        dataset = load_dataset("openai_humaneval")
+        dataset = load_dataset("openai/openai_humaneval")
         dataset_key = ["test"]
 
     with open(input_path, 'r') as f:
